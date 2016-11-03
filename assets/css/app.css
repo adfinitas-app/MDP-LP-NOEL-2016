@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'League Gothic Condensed Regular';
+	src: url('assets/fonts/leaguegothic-condensed-regular-webfont.ttf');
+}
+
+@font-face {
+	font-family: 'League Gothic Condensed Italic';
+	src: url('assets/fonts/leaguegothic-condensed-italic-webfont.ttf');
+}
+
+@font-face {
+	font-family: 'League Gothic Italic';
+	src: url('assets/fonts/leaguegothic-italic-webfont.ttf');
+}
+
+@font-face {
+	font-family: 'League Gothic';
+	src: url('assets/fonts/leaguegothic-regular-webfont.ttf');
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('assets/fonts/Museo300-Regular.otf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('assets/fonts/Museo500-Regular.otf');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('assets/fonts/Museo700-Regular.otf');
+	font-weight: 700;
+}
+
+body, html {
+	height:100%;
+	overflow: hidden;
+}
+
+.btn-custom {
+	background: #800d1c;
+	border-radius: 5px;
+}
+
+#header {
+}
+
+#text-video {
+	color: white;
+	position: absolute;
+	display: block;
+	height: 40px;
+	width: 420px;
+	top: 100px;
+}
+
+#cta-video {
+	position: absolute;
+	display: block;
+	height: 40px;
+	width: 200px;
+	bottom: 100px;
+}
+
+#video-header { 
+	position: relative;
+	width: 100%;
+}
+
+#container-video-header {
+	max-width: 100%; 
+	margin: 0; 
+	padding: 0; 
+	position: relative;
+}
