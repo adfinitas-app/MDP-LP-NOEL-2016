@@ -1,45 +1,50 @@
 @font-face {
 	font-family: 'League Gothic Condensed Regular';
-	src: url('assets/fonts/leaguegothic-condensed-regular-webfont.ttf');
+	src: url('/assets/fonts/leaguegothic-condensed-regular-webfont.ttf');
 }
 
 @font-face {
 	font-family: 'League Gothic Condensed Italic';
-	src: url('assets/fonts/leaguegothic-condensed-italic-webfont.ttf');
+	src: url('/assets/fonts/leaguegothic-condensed-italic-webfont.ttf');
 }
 
 @font-face {
 	font-family: 'League Gothic Italic';
-	src: url('assets/fonts/leaguegothic-italic-webfont.ttf');
+	src: url('/assets/fonts/leaguegothic-italic-webfont.ttf');
 }
 
 @font-face {
 	font-family: 'League Gothic';
-	src: url('assets/fonts/leaguegothic-regular-webfont.ttf');
+	src: url('/assets/fonts/leaguegothic-regular-webfont.ttf');
 }
 
 @font-face {
 	font-family: 'Museo';
-	src: url('assets/fonts/Museo300-Regular.otf');
+	src: url('/assets/fonts/Museo300-Regular.otf') format("opentype");
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: 'Museo';
-	src: url('assets/fonts/Museo500-Regular.otf');
+	src: url('/assets/fonts/Museo500-Regular.otf') format("opentype");
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: 'Museo';
-	src: url('assets/fonts/Museo700-Regular.otf');
+	src: url('/assets/fonts/Museo700-Regular.otf') format("opentype");
 	font-weight: 700;
 }
 
-body, html {
-	height:100%;
-	overflow: hidden;
+.bold
+{
+	font-weight: bold
 }
+
+/*body, html {
+height:100%;
+overflow: hidden;}
+*/
 
 .btn-custom {
 	background: #800d1c;
@@ -76,4 +81,199 @@ body, html {
 	margin: 0; 
 	padding: 0; 
 	position: relative;
+}
+
+#espace-bienvenue
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/bg-slide-dec.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.espace-block
+{
+	display: inline-block;
+	margin: 5px;
+	vertical-align: top;
+}
+
+.espace-block:nth-child(1) > img
+{
+	height: 120px;
+	padding-right: 20px;
+}
+
+.espace-info
+{
+	padding-top: 16px;
+}
+
+.espace-block-text
+{
+	max-width: 170px;
+	line-height: 1.2;
+	font-family: 'Museo';
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #800d1c;
+	margin-top: 10px;
+}
+
+.espace-break
+{
+	display: none;
+	line-height: 0px;
+}
+
+#don-ampleur
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/bg-last.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#don-ampleur-window
+{
+	display: inline-block;
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+#don-ampleur-window > div
+{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	max-width: 1200px;
+}
+
+#don-ampleur-window > div > div:first-child
+{
+	padding: 30px;
+}
+
+.text-ampleur-title
+{
+
+	line-height: 1;
+	display: inline-block;
+	color: white;
+	font-family: "Museo";
+	font-weight: 500;
+	font-size: 25px;
+	max-width: 300px;
+	text-transform: uppercase;
+}
+
+.text-ampleur-para
+{
+	margin-top: 15px;
+	line-height: 1;
+	color: white;
+	font-family: "Museo";
+	font-weight: 300;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.price-block
+{
+	background-color: #e8e8e8;
+	padding: 0px;
+	padding-top:20px;
+	margin-bottom: 10px;
+}
+
+.price-block:nth-child(1)
+{ background-color: #e8e8e8 !important; }
+.price-block:nth-child(2)
+{ background-color: #f2f2f2; }
+.price-block:nth-child(3)
+{ background-color: white; }
+
+.price-block > div
+{
+	max-width: 200px;
+	display: inline-block;
+	font-family: 'Museo';
+	padding: 5px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.price-block > div > img
+{
+	margin-bottom: 30px;
+}
+
+.price-block-bold
+{
+	font-weight: 700;
+	font-size: 45px;
+	margin-bottom: 4px;
+	line-height: 1;
+}
+
+.price-block > div > p:nth-child(4)
+{
+	font-size: 12px;
+	margin-bottom: 15px;
+	min-height: 30px;
+}
+
+.price-block > div > p:nth-child(5)
+{
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+.price-block > button
+{
+	color: white;
+	width: 100%;
+	margin: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-family: 'Open Sans Condensed';
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.price-block:nth-child(1) > button
+{ background-color: #770917; }
+.price-block:nth-child(2) > button
+{ background-color: #870b1b; }
+.price-block:nth-child(3) > button
+{ background-color: #980f21; }
+
+@media all and (max-width: 700px)
+{
+	.text-ampleur-title
+	{ text-align: center }
+}
+
+@media all and (max-width: 700px)
+{ 	.espace-break
+	{ display: block; }
+	.espace-block-text
+	{ width: 170px; }
+	.espace-info
+	{ padding-top: 0px; }
+}
+
+@media all and (max-width: 900px)
+{ .espace-block:nth-child(1)
+	{ width: 100%; margin-bottom: 20px}
+}
+
+@media all and (max-width: 639px)
+{ #don-ampleur-window > div
+	{ max-width: 400px}
 }
