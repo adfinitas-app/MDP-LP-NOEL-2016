@@ -1,4 +1,27 @@
 $(document).ready(function() {
+	var campaigns = [];
+	campaigns[0] = 35;
+	$.ajax({
+		type: "GET",
+		data: { 
+			"user_api": "mdp", 
+			"pwd_api": "VihP8456dsqsdtrtergdf26i"
+		},
+		url:"https://donner.miedepain.asso.fr/api/counter/get",
+		success:function(data){
+			console.log(data);
+		},
+		error: function (request, error) {
+			console.log(JSON.parse(JSON.stringify(request)));
+			console.log(JSON.parse(JSON.stringify(arguments)));
+			console.log("error == " + error);
+		}
+	});
+
+
+
+
+
 	$( "#progressbar" ).progressbar({
 		value: 37
 	});
@@ -10,10 +33,11 @@ $(document).ready(function() {
 	adaptVideo();
 	adaptHeader();
 	height_pb_adjust();
-	$(window).resize(function() {
-		adaptVideo();
-		height_pb_adjust();
-	});
+});
+
+$(window).resize(function() {
+	adaptVideo();
+	height_pb_adjust();
 });
 
 $('#cta-video').click( function() {
@@ -30,7 +54,6 @@ function 	height_pb_adjust()
 	maxheight = $(".price-block > div").first().height();
 	$(".price-block > div").each(function()
 	{
-		console.log($(this).height());
 		if ($(this).height() > maxheight)
 			maxheight = $(this).height();
 	});
@@ -46,10 +69,6 @@ function adaptVideo() {
 	$('#text-video').css({"right" : x + 'px'});
 	$('#video-header').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() - $('#header').innerHeight() + 'px'});
 	$('#container-video-header').css({height: $(window).innerHeight() - $('#header').innerHeight() + 'px'})
-}
-
-function adaptHeader() {
-
 }
 
 function 	scrollTo(next){

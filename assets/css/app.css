@@ -85,7 +85,10 @@ body, html {
 	border-radius: 5px;
 }
 
-#header {
+.button.btn-custom:hover,
+.button.btn-custom:focus {
+	background: #800d1c;
+
 }
 
 #footer {
@@ -190,6 +193,11 @@ body, html {
 	padding-top: 8px; 
 	padding-bottom: 1px
 }
+
+#div-btn-header:hover {
+	background: #ffd800;
+	color: black;
+} 
 
 #text-btn-header {
 	color: white; 
