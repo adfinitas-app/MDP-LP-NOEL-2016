@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var campaigns = [];
 	campaigns[0] = 35;
-	$.ajax({
+	/*$.ajax({
 		type: "GET",
 		data: { 
 			"user_api": "mdp", 
@@ -16,7 +16,7 @@ $(document).ready(function() {
 			console.log(JSON.parse(JSON.stringify(arguments)));
 			console.log("error == " + error);
 		}
-	});
+	});*/
 
 
 
