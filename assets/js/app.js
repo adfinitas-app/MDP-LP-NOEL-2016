@@ -31,7 +31,6 @@ $(document).ready(function() {
 		$('#text-video').hide();
 	});
 	adaptVideo();
-	adaptHeader();
 	height_pb_adjust();
 });
 
