@@ -39,7 +39,10 @@
 {
 	font-weight: bold;
 }
-
+a
+{
+	cursor: pointer !important;
+}
 /** {
 	background: #000 !important;
 	color: #0f0 !important;
@@ -412,7 +415,7 @@ body, html {
 	margin-bottom: 15px;
 }
 
-.price-block > button
+.price-block > a > button
 {
 	color: white;
 	width: 100%;
@@ -424,11 +427,11 @@ body, html {
 	text-transform: uppercase;
 	font-size: 20px;
 }
-.price-block:nth-child(1) > button
+.price-block:nth-child(1) > a> button
 { background-color: #770917; }
-.price-block:nth-child(2) > button
+.price-block:nth-child(2) > a> button
 { background-color: #870b1b; }
-.price-block:nth-child(3) > button
+.price-block:nth-child(3) > a> button
 { background-color: #980f21; }
 
 @media all and (max-width: 700px)
