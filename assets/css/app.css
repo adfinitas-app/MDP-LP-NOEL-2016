@@ -43,17 +43,18 @@ a
 {
 	cursor: pointer !important;
 }
-/** {
-	background: #000 !important;
-	color: #0f0 !important;
-	outline: solid #f00 1px !important;
-	}*/
 /*
+* {
+background: #000 !important;
+color: #0f0 !important;
+outline: solid #f00 1px !important;
+}
+*/
 body, html {
 	height:100%;
 	overflow: hidden;
 }
-*/
+
 #block-logo {
 	padding-top: 15px;
 }
@@ -377,6 +378,12 @@ body, html {
 	padding: 0px;
 	padding-top:20px;
 	margin-bottom: 10px;
+	transition: .2s all;
+}
+
+.price-block:hover
+{
+	transform: scale(1.05);
 }
 
 .price-block:nth-child(1)
