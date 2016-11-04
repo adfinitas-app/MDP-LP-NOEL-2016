@@ -50,11 +50,12 @@ color: #0f0 !important;
 outline: solid #f00 1px !important;
 }
 */
+/*
 body, html {
 	height:100%;
 	overflow: hidden;
 }
-
+*/
 #block-logo {
 	padding-top: 15px;
 }
