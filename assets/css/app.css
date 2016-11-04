@@ -35,16 +35,50 @@
 	src: url('/assets/fonts/Museo700-Regular.otf') format("opentype");
 	font-weight: 700;
 }
-
 .bold
 {
-	font-weight: bold
+	font-weight: bold;
 }
 
-/*body, html {
-height:100%;
-overflow: hidden;}
-*/
+body, html {
+	height:100%;
+	overflow: hidden;
+}
+
+#block-logo {
+	padding-top: 15px;
+}
+
+#block-btn-large,
+#block-btn-small {
+	padding-top: 30px;
+}
+#logo {
+	max-width: 60px;
+}
+
+.title,
+.sub-text {
+	line-height: 1.2;
+	margin: 0;
+	font-family: 'Museo';
+	font-weight: 700;
+	color: #800d1c;
+}
+
+.sub-text {
+	text-transform: uppercase;
+	color: #4f4f4f;
+	padding-bottom: 10px;
+}
+
+#slide-coeur {
+	max-width: 100%;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/bg-slide-dec.jpg');
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center
+}
 
 .btn-custom {
 	background: #800d1c;
@@ -54,13 +88,52 @@ overflow: hidden;}
 #header {
 }
 
+#footer {
+	max-width: 100%;
+	background: #2b2b2b;
+	color: #7a7a7a;
+}
+
+.title-footer {
+	text-transform: uppercase;
+}
+
+.block-footer-link {
+	display: inline;
+}
+
+.text-footer-link {
+	font-size: 14px;
+	color: white;
+	display: inline-block;
+	margin: 0;
+}
+
+.img-footer-link {
+	max-width: 15px;
+	display: inline-block;
+}
+
+.text-normal {
+	font-family: 'Museo';
+	font-weight: 300;
+	color:; #2f2f2f;
+	font-size: 17px;
+}
+
+#slide-don {
+	padding: 25px 0 25px 0;
+}
+
 #text-video {
+	font-family: 'Helvetica';
+	font-weight: bold;
 	color: white;
 	position: absolute;
 	display: block;
 	height: 40px;
-	width: 420px;
-	top: 100px;
+	width: 440px;
+	top: 130px;
 }
 
 #cta-video {
@@ -69,6 +142,61 @@ overflow: hidden;}
 	height: 40px;
 	width: 200px;
 	bottom: 100px;
+}
+
+#bg-left {
+	padding-top: 80px;
+	padding-bottom: 60px;
+	flex: 1;
+	background: #800d1c;
+}
+
+#bg-right {
+	flex: 1; 
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/bg-rencontrer.jpg');
+	background-position: 40% 50%;
+	background-size: center;
+	background-repeat: no-repeat;
+}
+
+#text1-bg-left,
+#text2-bg-left,
+#text3-bg-left {
+	text-transform: uppercase;
+	font-family: 'Museo';
+	font-weight: 700;
+	font-size: 38px;
+	color: white;
+	line-height: 1.1;
+}
+
+#text2-bg-left {
+	text-transform: none;
+	color: #ffe033;
+	font-size: 22px;
+	font-weight: 300;
+}
+#text3-bg-left {
+	text-transform: none;
+	color: #ffe033;
+	font-size: 22px;
+}
+
+#div-btn-header {
+	border-radius: 3px;
+	border: 1px solid #ffd800; 
+	text-align: center; 
+	padding: 0px; 
+	padding-top: 8px; 
+	padding-bottom: 1px
+}
+
+#text-btn-header {
+	color: white; 
+	font-size: 16px; 
+	font-family: 'Open Sans Condensed'; 
+	padding-top: 3px;
+	font-weight: 700;
 }
 
 #video-header { 
@@ -276,4 +404,100 @@ overflow: hidden;}
 @media all and (max-width: 639px)
 { #don-ampleur-window > div
 	{ max-width: 400px}
+}
+
+.block-portrait {
+	padding: 0;
+	position: relative;
+}
+.second {
+	background: #f7f7f7;
+}
+.block-text {
+	padding-top: 40px; 
+	position: relative; 
+	padding-left: 0; 
+	padding-right: 0
+}
+.slide-portrait {
+	max-width: 100%; 
+}
+
+.container-img-portrait {
+	position: relative;
+}
+.titre-portrait {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: 'Museo';
+	font-weight: 700;
+	color: white;
+	line-height: 1.1;
+	position: absolute;
+	bottom: 0px;
+	left: 25px;
+}
+
+.block-footer.left {
+	border-left: 1px solid black;
+}
+
+.block-footer.bottom {
+	padding-bottom: 15px;
+	border-bottom: 1px solid black;
+}
+
+.letter-maj {
+	font-weight: 700;
+	color: #ffd800;
+	font-size: 32px;
+}
+
+.text-paragraph {
+	line-height: 1.3;
+	font-style: italic;
+}
+
+.sub-titre-portrait {
+	font-weight: 300;
+}
+
+.block-plus {
+	text-align: center;
+}
+.img-plus {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.img-moins {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+progress[value] {
+	/* Reset the default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 15px;
+	margin-bottom: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: #ededed;
+	border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-value {
+	background: #ffe033;
+	border-radius: 10px; 
+}
+
+@media screen and (max-width: 640px) {
+	#block-btn-small {
+		float: right;
+	}
+}
+@media screen and (max-width: 1010px) {
+
 }

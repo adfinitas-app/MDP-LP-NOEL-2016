@@ -7,36 +7,287 @@
 	<title>MDP</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" />
 	<link rel='stylesheet' href='assets/css/app.css' type='text/css'/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 <body>
 	<div class="row" id="header">
-		<div class="large-2 columns">
-			LOGO
+		<div class="small-6 medium-offset-3 medium-3 large-offset-0 large-2 columns">
+			<div id="block-logo">
+				<img id="logo" alt="Logo Mie de Pain" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/logo-mdp.png">
+			</div>
 		</div>
-		<div class="large-8 columns" style="text-align: center">
-			<h1 style="margin: 0">BIENVENUE EN HIVER</h1>
-			<h4 style="text-transform: uppercase; margin: 0">UN HAVRE DE CHALEUR AU Cœur DE L'URGENCE</h4>
+		<div class="small-6 columns hide-for-large">
+			<div id="block-btn-small">
+				<button id="btn-don-header-small" type="button" class="button btn-custom"><span class="text-style" style="white-space: nowrap">JE FAIS UN DON</span></button>
+			</div>
 		</div>
-		<div class="large-2 columns">
-			<button id="start_button" type="button" class="button btn-custom" style="margin-bottom: 50px"><span class="text-style" style="white-space: nowrap">JE FAIS UN DON</span></button>
-			
+		<div class="small-12 large-8 columns" style="text-align: center">
+			<h1 class="title">BIENVENUE EN HIVER</h1>
+			<h5 class="sub-text">UN HAVRE DE CHALEUR AU Cœur DE L'URGENCE</h5>
+		</div>
+		<div class="small-6 medium-6 large-2 columns show-for-large">
+			<div id="block-btn-large">
+				<button id="btn-don-header-large" type="button" class="button btn-custom"><span class="text-style" style="white-space: nowrap">JE FAIS UN DON</span></button>
+			</div>
 		</div>
 	</div>
 	<div id="container-video-header" class="row">
-		<iframe id="video-header" src="https://player.vimeo.com/video/189420707" width="640" height="396" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<iframe id="video-header" src="https://player.vimeo.com/video/190112488" width="640" height="361" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		<p id="text-video" style="text-transform: uppercase;">Découvrez nos actions au coeur de l'urgence</p>
-		<a id="cta-video"><div style="border:1px solid #ffd800; text-align: center; padding: 10px; padding-bottom: 1px"><p style="color: white; font-size: 20px; font-family: 'Raleway'; font-weight: bold; padding-top: 3px">EN SAVOIR PLUS</p></div></a>
+		<a id="cta-video"><div id="div-btn-header"><p id="text-btn-header">EN SAVOIR PLUS</p></div></a>
 	</div>
+	<div id="slide-don" class="row">
+		<div class="large-6 large-centered columns" style="text-align: center">
+			<p class="text-normal">Rejoignez notre mobilisation solidaire pour offrir un Espace Bienvenue aux personnes sans-abri confrontées au froid et à l’urgence !</p>
+			<div>
+				<progress max="100" value="80"></progress>
+			</div>
+			<button type="button" class="button btn-custom"><span class="text-style" style="white-space: nowrap">JE FAIS UN DON</span></button>
+		</div>
+	</div>
+	<div id="espace-bienvenue" class="text-center">
+		<div class="espace-block">
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/logo-espace.png">
+		</div>
+		<div class="espace-block espace-info">
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/Urgences.gif">
+			<p class="espace-block-text"><span class="bold">8 places</span><br>dédiées à l’accueil <span class="bold">d’urgence</span></p>
+		</div>
+		<div class="espace-block espace-info">
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/Personnes.gif">
+			<p class="espace-block-text"><span class="bold">Ouvert<br>24H/24</span> et 365 jours par an</p>
+		</div>
+		<span class="espace-break"><br></span>
+		<div class="espace-block espace-info">
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/Repas.gif">
+			<p class="espace-block-text"><span class="bold">1380 Personnes</span> <span style="white-space: nowrap;">sans-abri</span> <span class="bold">accueilies en 2015</span></p>
+		</div>
+		<div class="espace-block espace-info">
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/24H.gif">
+			<p class="espace-block-text">Plus de<br><span class="bold">4000 repas</span></p>
+		</div>
+	</div>
+	<div class="row" style="display: flex; max-width: 100%">
+		<div id="bg-left" class="small-12 medium-6 large-6 columns">
+			<div class="small-12 medium-6 small-centered columns">
+				<p id="text1-bg-left">Répondre Bienvenue aux personnes qui frappent à notre porte : une urgence permanente accrue au cœur de l’hiver !</p>
+				<p id="text2-bg-left">Ouvert depuis 3 ans au sein du Refuge, l’Espace Bienvenue des Oeuvres de La Mie de Pain répond de façon immédiate aux demandes d’urgence des personnes à la rue : hébergement, repas, premiers soins et premier bilan social.
+				</p>
+				<p id="text3-bg-left">Alors que le froid s’intensifie, aidez-nous à offrir un havre de chaleur et de réconfort aux plus démunis d’entre nous...
+				</p>
+			</div>
+		</div>
+		<div id="bg-right" class="large-6 meedium-6 columns show-for-large">
+		</div>
+	</div>
+	<div class="row slide-portrait">
+		<div class="container-img-portrait show-for-small-only">
+			<img class="img-portrait" alt="Portrait Anne" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/portrait-anne.jpg">
+			<p class="titre-portrait" >ANNE LESUEUR,<br /><span class="sub-titre-portrait">DIRECTRICE DU REFUGE</span></p>
+		</div>
+		<div class="small-12 medium-6 large-6 columns block-text">
+			<div class="small-10 medium-8 large-6 small-centered columns">
+				<p class="text-normal text-paragraph"><span class="letter-maj">Q</span>uand ils passent la porte de l’Espace Bienvenue, peu importe qu’ils soient propres ou non, qu’ils parlent ou pas... nous leur disons BONJOUR. Chacun est invité à donner un nom et un prénom, et c’est cela notre première mission : faire sortir de l’anonymat ceux qui y ont été poussés par la rue.
+				</p>
+				<div id="text-portrait-1-1" style="display: none;">
+					<p class="text-normal text-paragraph"><br />Au-delà de dire bonjour nous signifions à l’autre que, pour nous, il n’est pas transparent. Et parce qu’il n’est pas transparent nous prenons en compte son parcours de vie, ses problèmes. Parfois les expériences de rue et leurs durées font qu’il faut du temps au nouvel accueilli pour pouvoir répondre à notre bonjour et rentrer en relation, mais nous prenons ce temps-là. L’Espace Bienvenue apporte donc un cadre bienveillant dans lequel chacun prend le temps nécessaire pour s’ouvrir à l’autre.<br /><br />
+
+						Les difficultés rencontrées sont variées, allant de la santé, au travail, en passant par des soucis financiers. Depuis peu, nous accueillons également des salariés précarisés, qu’ils soient en période d’essai ne leur permettant pas d’obtenir un logement, ou en emploi précaire.<br /><br />
+
+						Chaque personne accueillie a aussi la possibilité de rencontrer un travailleur social. Ce dernier va faire un point sur les besoins qu’il identifie ou qu’il perçoit. Cela concerne aussi bien la <span class="show-for-small-only">vêture que les soins ou les droits. Le travailleur social s’assure de la cohérence des actions à engager, en lien avec les agents d’accueil. Et ce regard croisé est un élément fondamental de la prise en charge des nouveaux accueillis.<br /><br />
+
+						Ainsi, de par sa diversité de services, l’Espace Bienvenue permet de parler, de prendre une douche, de se changer, de se soigner, d’ouvrir éventuellement des droits, de bénéficier de 3 repas journaliers. Au-delà de cela, l’Espace Bienvenue va permettre, pendant quelques jours, de pouvoir stopper l’angoisse liée à l’errance.</span>
+					</p>
+					<div class="show-for-small-only" style="text-align: center; margin-top: 30px">
+						<img class="img-moins" id="img-moins1-small" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/moins.png">
+					</div>
+				</div>
+			</div>
+			<div class="block-plus">
+				<img class="img-plus" id="img-plus1" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/plus.png">
+			</div>
+		</div>
+		<div class="small-12  medium-6 large-6 columns block-portrait">
+			<div class="container-img-portrait hide-for-small-only">
+				<img class="img-portrait" alt="Portrait Anne" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/portrait-anne.jpg">
+				<p class="titre-portrait" >ANNE LESUEUR,<br /><span class="sub-titre-portrait">DIRECTRICE DU REFUGE</span></p>
+			</div>
+			<div id="text-portrait-1-2" class="small-10 small-offset-1 large-6 columns end hide-for-small-only"  style="display: none; padding-top: 40px;">
+				<p class="text-normal text-paragraph">vêture que les soins ou les droits. Le travailleur social s’assure de la cohérence des actions à engager, en lien avec les agents d’accueil. Et ce regard croisé est un élément fondamental de la prise en charge des nouveaux accueillis.<br /><br />
+
+					Ainsi, de par sa diversité de services, l’Espace Bienvenue permet de parler, de prendre une douche, de se changer, de se soigner, d’ouvrir éventuellement des droits, de bénéficier de 3 repas journaliers. Au-delà de cela, l’Espace Bienvenue va permettre, pendant quelques jours, de pouvoir stopper l’angoisse liée à l’errance.
+				</p>
+				<div style="text-align: center; margin-top: 30px">
+					<img class="img-moins" id="img-moins1" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/moins.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row slide-portrait second">
+		<div class="container-img-portrait show-for-small-only">
+			<img class="img-portrait" alt="Portrait Serge" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/portrait-serge.jpg">
+			<p class="titre-portrait" >SERGE,<br /><span class="sub-titre-portrait">récemment accueilli<br />à l’Espace Bienvenue</span></p>
+		</div>
+		<div class="small-12 medium-6 large-6 columns block-text">
+			<div class="small-10 medium-8 large-6 small-centered columns">
+				<p class="text-normal text-paragraph"><span class="letter-maj">D</span>ès mon arrivée à l’Espace 
+					Bienvenue, je me suis senti REVIVRE ! Il faisait chaud, on me regardait, on me souriait, on m’appelait par mon prénom. J’étais redevenu QUELQU’UN ! 
+				</p>
+				<div id="text-portrait-2-1" style="display: none;">
+					<p class="text-normal text-paragraph"><br />Parce que depuis que je me retrouve à la rue, je souffre du froid, de la faim, je n’ai aucun d’endroit où dormir en sécurité ni me laver… Mais le plus dur peut-être, c’est le regard gêné des passants qui se détournent de moi comme s’ils ne me voyaient pas, comme si je n’existais pas, j’étais devenu transparent, je n’étais PERSONNE !<br /><br />Alors oui, un sourire bienveillant, un mot gentil, une attention, ça réchauffe plus encore que la chaleur de l’Espace Bienvenue. Ca réchauffe le coeur ! Et ça donne envie de se battre pour s’en sortir. Bien-sûr ça va être dur car j’ai perdu mon boulot, mon appart, mes proches qui se sont détournés de moi. Toute ma vie d’avant s’est écroulée…
+
+						<span class="show-for-small-only">Mais si je ne suis pas seul, si quelqu’un croit en moi et est prêt à m’aider, alors je pourrai peut-être y arriver.<br /><br />
+
+							Merci de m’avoir accueilli, de m’avoir dit BIENVENU et de m’offrir une NOUVELLE CHANCE !!</span>
+						</p>
+						<div class="show-for-small-only" style="text-align: center; margin-top: 30px">
+							<img class="img-moins" id="img-moins2-small" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/moins.png">
+						</div>
+					</div>
+				</div>
+				<div class="block-plus">
+					<img class="img-plus" id="img-plus2" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/plus.png">
+				</div>
+			</div>
+			<div class="small-12  medium-6 large-6 columns block-portrait">
+				<div class="container-img-portrait hide-for-small-only">
+					<img class="img-portrait" alt="Portrait Serge" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/portrait-serge.jpg">
+					<p class="titre-portrait" >SERGE,<br /><span class="sub-titre-portrait">récemment accueilli<br />à l’Espace Bienvenue</span></p>
+				</div>
+				<div id="text-portrait-2-2" class="small-10 small-offset-1 large-6 columns end hide-for-small-only"  style="display: none; padding-top: 40px;">
+					<p class="text-normal text-paragraph">Mais si je ne suis pas seul, si quelqu’un croit en moi et est prêt à m’aider, alors je pourrai peut-être y arriver.
+
+						Merci de m’avoir accueilli, de m’avoir dit BIENVENU et de m’offrir une NOUVELLE CHANCE !!
+					</p>
+					<div style="text-align: center; margin-top: 30px">
+						<img class="img-moins" id="img-moins2" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/moins.png">
+					</div>
+				</div>
+			</div>
+		</div>
 
 
+		<div class="row slide-portrait">
+			<div class="container-img-portrait show-for-small-only">
+				<img class="img-portrait" alt="Portrait Jean Eric" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/portrait-je.jpg">
+				<p class="titre-portrait" >Jean-Éric Joire,<br /><span class="sub-titre-portrait">médecin bénévole<br />à La Mie de Pain depuis 15 ans</span></p>
+			</div>
+			<div class="small-12 medium-6 large-6 columns block-text">
+				<div class="small-10 medium-8 large-6 small-centered columns">
+					<p class="text-normal text-paragraph"><span class="letter-maj">N</span>ous sommes de plus en plus 
+						confrontés à des personnes fragilisées par l’âge et des pathologies souvent lourdes, provoquées ou aggravées par l’existence dans la rue : diabète, hypertension artérielle, insuffisance cardiaque (...), prises en charge le plus souvent tardivement !
+					</p>
+					<div id="text-portrait-3-1" style="display: none;">
+						<p class="text-normal text-paragraph"><br />Endurcis par leurs conditions de vie très précaires, nos patients viennent en général nous consulter à un stade très avancé. Nous devons alors agir très vite, car leur santé et parfois leur vie sont réellement en danger !<br /><br />
 
+							Mais ma compétence de médecin, comme celle de tous les autres médecins bénévoles qui assurent les consultations quotidiennes, ainsi que le dévouement des infirmières qui nous accompagnent, ne peuvent rien si nous ne disposons pas des médicaments et du matériel médical indispensables pour examiner et soigner nos patients.
 
-
-
-	<script src="https://player.vimeo.com/api/player.js"></script>
-	<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
-	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
-	<script src="assets/js/app.js" type="text/javascript"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js" type="text/javascript"></script>
-</body>
-</html>
+							<span class="show-for-small-only">Le soutien des donateurs de La Mie de Pain est donc plus que jamais indispensable cet hiver pour soigner et préserver la vie de femmes et d’hommes qui viennent vers nous… Il est également urgent car nos consultations ne désemplissent pas, avec 20 à 25 patients chaque jour… Près de 6 000 consultations chaque année !</span>
+						</p>
+						<div class="show-for-small-only" style="text-align: center; margin-top: 30px">
+							<img class="img-moins" id="img-moins3-small" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/moins.png">
+						</div>
+					</div>
+				</div>
+				<div class="block-plus">
+					<img class="img-plus" id="img-plus3" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/plus.png">
+				</div>
+			</div>
+			<div class="small-12  medium-6 large-6 columns block-portrait">
+				<div class="container-img-portrait hide-for-small-only">
+					<img class="img-portrait" alt="Portrait Jean Eric" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/portrait-je.jpg">
+					<p class="titre-portrait" >Jean-Éric Joire,<br /><span class="sub-titre-portrait">médecin bénévole<br />à La Mie de Pain depuis 15 ans</span></p>
+				</div>
+				<div id="text-portrait-3-2" class="small-10 small-offset-1 large-6 columns end hide-for-small-only"  style="display: none; padding-top: 40px;">
+					<p class="text-normal text-paragraph">Le soutien des donateurs de La Mie de Pain est donc plus que jamais indispensable cet hiver pour soigner et préserver la vie de femmes et d’hommes qui viennent vers nous… Il est également urgent car nos consultations ne désemplissent pas, avec 20 à 25 patients chaque jour… Près de 6 000 consultations chaque année !
+					</p>
+					<div style="text-align: center; margin-top: 30px">
+						<img class="img-moins" id="img-moins3" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/moins.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="slide-coeur">
+			<div class="medium-10 small-12 large-8 small-centered columns">
+				<h1 class="title">OUVREZ VOTRE CŒUR !</h1>
+				<h4 class="title">Offrez un havre de chaleur et de réconfort aux personnes confrontées au froid et à l’urgence</h4>
+			</div>
+		</div>
+		<div id="don-ampleur" class="text-center">
+			<div id="don-ampleur-window">
+				<div>
+					<div class="row" style="background: rgba(0,0,0,0.5);">
+						<div class="small-12 medium-6 columns text-left">
+							<p class="text-ampleur-title text-left">Et donnez plus d’ampleur à votre don grâce à la réduction fiscale de 75%</p>
+						</div>
+						<div class="small-12 medium-6 columns text-center">
+							<div style="display: inline-block; max-width: 300px">
+								<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/logo-chart.png">
+								<p class="text-ampleur-para">75% du montant de votre don est déductible de vos impôts sur le revenu, jusqu’à 530 € (plafond 2016), puis 66% </p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 medium-4 columns text-center price-block text-center">
+							<div>
+								<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/arrow-down.png" /><br>
+								<p style="font-weight: 700; font-size: 45px; margin-bottom: 4px; line-height: 1; color:#770917;">85€</p>
+								<p>(soit 6,75€ après déduction fiscale)</p>
+								<p>nuit d’hébergement<br> + 3 repas chauds</p>
+							</div>
+							<button>Je donne</button>
+						</div>
+						<div class="small-12 medium-4 columns text-center price-block text-center">
+							<div>
+								<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/arrow-down.png"><br>
+								<p style="font-weight: 700; font-size: 45px; margin-bottom: 4px; line-height: 1; color:#870b1b;">27€</p>
+								<p>(soit 13,75€ après déduction fiscale)</p>
+								<p>24h de prise en charge<br>globale : hébergement, repas, premiers soins médicaux et premier bilan social</p>
+							</div>
+							<button>Je donne</button>
+						</div>
+						<div class="small-12 medium-4 columns text-center price-block text-center">
+							<div>
+								<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/arrow-down.png"><br>
+								<p style="font-weight: 700; font-size: 45px; margin-bottom: 4px; line-height: 1; color: #980f21;">85€</p>
+								<p>(soit 21,25€ après déduction fiscale)</p>
+								<p>24h de prise en charge globale, + la participation à un réveillon solidaire de La Mie de Pain pour les fêtes de fin d’année</p>
+							</div>
+							<button>Je donne</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="footer">
+			<div class="large-8 large-centered columns">
+				<div class="large-7 columns">
+					<div class="block-footer bottom">
+						<h5 class="title-footer">qui sommes nous ?</h5>
+						<p>L’association La Mie de Pain, fondée en 1891 par Paulin Enfert, est une association reconnue d’utilité publique qui vient en aide aux personnes en situation de précarité, d’exclusion et de marginalisation. Sa mission principale est de fournir une aide d’urgence à ces personnes (accueillir, nourrir et héberger) et d’accompagner leur réinsertion sociale et professionnelle. Elle agréée par le Comité de la charte – Don en confiance.</p>
+						<a href="#"><div class="block-footer-link">
+							<img class="img-footer-link" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/arrow-footer.png">
+							<p class="text-footer-link" >En savoir plus</p>
+						</div></a>
+					</div>
+				</div>
+				<div class="large-5 columns block-footer left">
+					<h5 class="title-footer">transparence financière</h5>
+					<p>La confiance que nous entretenons avec nos donateurs et tous nos soutiens divers et variés est essentielle. C’est pourquoi nous œuvrons à rendre nos comptes, nos ressources et nos pratiques totalement limpides. Etre transparent aux yeux de ceux qui nous supportent, c’est participer à la construction d’un climat de confiance indispensable pour nous permettre d’exister.<br /><br />
+						 
+						Les comptes La Mie de Pain sont annuellement soumis aux contrôles d’un Commissaire aux comptes et du Préfet de région. Les comptes de l’Association pour l’année 2011 ont été certifiés. Cette certification donne lieu à la présentation des comptes annuels de La Mie de Pain sous la forme d’un bilan et d’un compte de résultat.</p>
+						<a href="#"><div class="block-footer-link">
+							<img class="img-footer-link" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/arrow-footer.png">
+							<p class="text-footer-link" >En savoir plus</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+		<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+		<script src="assets/js/app.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js" type="text/javascript"></script>
+	</body>
+	</html>
