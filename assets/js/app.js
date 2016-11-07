@@ -18,10 +18,6 @@ $(document).ready(function() {
 		}
 	});*/
 
-
-
-
-
 	$( "#progressbar" ).progressbar({
 		value: 37
 	});
@@ -39,11 +35,31 @@ $(window).resize(function() {
 	height_pb_adjust();
 });
 
+manage_header();
+$(window).scroll(function() {
+	manage_header();	
+});
+
 $('#cta-video').click( function() {
 	$('html').css({"overflow" : "visible", "height": "auto"});
 	$('body').css({"overflow" : "visible", "height": "auto"});
 	scrollTo("#slide-don");
 });
+
+function 	manage_header()
+{
+	var docViewTop = $(window).scrollTop();
+	var docViewBottom = docViewTop + $(window).height();
+
+	var elemTop = $('#header').offset().top;
+	var elemBottom = elemTop + $('#header').height();
+
+	if (docViewTop > elemBottom)
+		$("#header-sticky").fadeIn(350);
+	else
+		$("#header-sticky").fadeOut(350);	
+}
+
 
 function 	height_pb_adjust()
 {

@@ -276,8 +276,8 @@ body, html {
 
 #espace-bienvenue
 {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/bg-slide-dec.jpg');
 	background-size: cover;
 	background-position: center;
