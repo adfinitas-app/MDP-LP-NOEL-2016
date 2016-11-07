@@ -120,7 +120,7 @@ $('#chevron-slide-coeur').click( function() {
 
 $('#img-plus1').click( function() {
 	$('#text-portrait-1-1').slideToggle( "slow", function() {
-		$('#img-plus1').hide();@
+		$('#img-plus1').hide();
 	});
 	$('#text-portrait-1-2').slideToggle( "slow", function() {
 		$('#img-moins1').show();
