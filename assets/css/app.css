@@ -50,14 +50,14 @@ color: #0f0 !important;
 outline: solid #f00 1px !important;
 }
 */
-
+/*
 body, html {
 	height:100%;
 	overflow: hidden;
 }
-
+*/
 #block-logo {
-	padding-top: 15px;
+	padding-top: 12px;
 }
 
 #block-btn-large,
@@ -87,7 +87,7 @@ body, html {
 	max-width: 100%;
 	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/bg-slide-dec.jpg');
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 	text-align: center
 }
 
@@ -199,12 +199,11 @@ body, html {
 	display: block;
 	height: 40px;
 	width: 200px;
-	bottom: 100px;
 }
 
 #bg-left {
 	padding-top: 80px;
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 	flex: 1;
 	background: #800d1c;
 }
@@ -212,7 +211,7 @@ body, html {
 #bg-right {
 	flex: 1; 
 	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/bg-rencontrer.jpg');
-	background-position: 40% 50%;
+	background-position: 50% 90%;
 	background-size: center;
 	background-repeat: no-repeat;
 }
@@ -223,7 +222,7 @@ body, html {
 	text-transform: uppercase;
 	font-family: 'Museo';
 	font-weight: 700;
-	font-size: 38px;
+	font-size: 30px;
 	color: white;
 	line-height: 1.1;
 }
@@ -231,13 +230,18 @@ body, html {
 #text2-bg-left {
 	text-transform: none;
 	color: #ffe033;
-	font-size: 22px;
+	font-size: 16px;
 	font-weight: 300;
 }
 #text3-bg-left {
 	text-transform: none;
 	color: #ffe033;
-	font-size: 22px;
+	font-size: 16px;
+}
+
+#chevron-bg-left:hover,
+#chevron-slide-coeur:hover {
+	transform: scale(1.25);
 }
 
 #div-btn-header {
@@ -276,8 +280,8 @@ body, html {
 
 #espace-bienvenue
 {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-lp-noel-2016/bg-slide-dec.jpg');
 	background-size: cover;
 	background-position: center;

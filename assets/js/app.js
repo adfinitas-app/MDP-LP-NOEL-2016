@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	var campaigns = [];
 	campaigns[0] = 35;
-	/*$.ajax({
+	$.ajax({
 		type: "GET",
 		data: { 
-			"user_api": "mdp", 
-			"pwd_api": "VihP8456dsqsdtrtergdf26i"
+			"user_api": "umdpapi", 
+			"pwd_api": "drR3tmYQ"
 		},
 		url:"https://donner.miedepain.asso.fr/api/counter/get",
 		success:function(data){
@@ -16,7 +16,7 @@ $(document).ready(function() {
 			console.log(JSON.parse(JSON.stringify(arguments)));
 			console.log("error == " + error);
 		}
-	});*/
+	});
 
 
 
@@ -25,11 +25,22 @@ $(document).ready(function() {
 	$( "#progressbar" ).progressbar({
 		value: 37
 	});
+
+
 	var iframe1 = document.querySelector('#video-header');
 	var player1 = new Vimeo.Player(iframe1);
 	player1.on('play', function() {
-		$('#text-video').hide();
 	});
+	player1.on('timeupdate', function(data) {
+		if (parseInt(data['seconds']) > 135)
+			$('#cta-video').show();
+		else {
+			$('#cta-video').hide();
+		}
+	});
+
+
+
 	adaptVideo();
 	height_pb_adjust();
 });
@@ -63,7 +74,13 @@ function 	height_pb_adjust()
 
 function adaptVideo() {
 	var x = ($(window).innerWidth() - $('#cta-video').innerWidth()) / 2;
+	var y = ($(window).innerHeight() - $('#cta-video').innerHeight()) / 2;
 	$('#cta-video').css({"right" : x + 'px'});
+	$('#cta-video').css({"bottom" : y + 'px'});
+
+
+
+
 	x = ($(window).innerWidth() - $('#text-video').innerWidth()) / 2;
 	$('#text-video').css({"right" : x + 'px'});
 	$('#video-header').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() - $('#header').innerHeight() + 'px'});
@@ -79,6 +96,14 @@ function 	scrollTo(next){
 		return false;
 	}
 };
+
+$("#chevron-bg-left").click( function() {
+	scrollTo('.slide-portrait');
+});
+
+$('#chevron-slide-coeur').click( function() {
+	scrollTo('#don-ampleur');
+});
 
 $('#img-plus1').click( function() {
 	$('#text-portrait-1-1').slideToggle( "slow", function() {
