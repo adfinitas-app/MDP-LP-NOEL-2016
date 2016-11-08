@@ -5,11 +5,12 @@ $(document).ready(function() {
 		type: "GET",
 		data: { 
 			"user_api": "umdpapi", 
-			"pwd_api": "drR3tmYQ"
+			"pwd_api": "drR3tmYQ",
+			"campaigns": campaigns
 		},
 		url:"https://donner.miedepain.asso.fr/api/counter/get",
 		success:function(data){
-			console.log(data);
+			fillProgressBar(data);
 		},
 		error: function (request, error) {
 			console.log(JSON.parse(JSON.stringify(request)));
@@ -17,12 +18,6 @@ $(document).ready(function() {
 			console.log("error == " + error);
 		}
 	});
-
-	$( "#progressbar" ).progressbar({
-		value: 37
-	});
-
-
 	var iframe1 = document.querySelector('#video-header');
 	var player1 = new Vimeo.Player(iframe1);
 	player1.on('play', function() {
@@ -37,6 +32,16 @@ $(document).ready(function() {
 	adaptVideo();
 	height_pb_adjust();
 });
+
+function fillProgressBar(data) {
+	var objectif_don = 20000;
+	var res = data.substring(2);
+
+	res = res.split("|");
+	var amount = parseInt(res[1]) / 100;
+	var amount_final = (amount / objectif_don ) * 100;
+	$( "#progressBar" ).attr({'value':amount_final});
+}
 
 $(window).resize(function() {
 	adaptVideo();
@@ -65,7 +70,7 @@ function 	manage_header()
 	if (docViewTop > elemBottom)
 		$("#header-sticky").fadeIn(350);
 	else
-		$("#header-sticky").fadeOut(350);	
+		$("#header-sticky").hide();	
 }
 
 
