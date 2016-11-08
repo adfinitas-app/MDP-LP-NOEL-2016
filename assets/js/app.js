@@ -34,13 +34,14 @@ $(document).ready(function() {
 });
 
 function fillProgressBar(data) {
+	console.log(data);
 	var objectif_don = 20000;
 	var res = data.substring(2);
 
 	res = res.split("|");
 	var amount = parseInt(res[1]) / 100;
-	var amount_final = (amount / objectif_don ) * 100;
-	$( "#progressBar" ).attr({'value':amount_final});
+	var percentage = (amount / objectif_don ) * 100;
+	$( "#progressBar" ).attr({'value':percentage});
 }
 
 $(window).resize(function() {
